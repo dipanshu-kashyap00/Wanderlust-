@@ -107,3 +107,40 @@ font-weight:400 !important;
     padding-left:0;
     padding-right: 0;
 }
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .tax-toggle {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+    .filter {
+        margin-right: 1rem;
+    }
+    .show-img {
+        height: 20vh;
+    }
+    .btns {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .navbar {
+        height: auto;
+        padding: 0.5rem;
+    }
+    .f-info {
+        height: auto;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-img-top {
+        height: 15rem !important;
+    }
+    .filter p {
+        font-size: 0.7rem;
+    }
+}
