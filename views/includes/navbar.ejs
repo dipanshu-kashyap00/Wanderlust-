@@ -1,33 +1,39 @@
 <style>
-
 .search-btn{
-  background-color:#fe424d;
-  color:#fff;
-  border-radius:25px;
-  padding: 0 1rem 0 1rem;
+background-color:#fe424d;
+color:#fff;
+border-radius:25px;
+padding: 0 1rem;
+border:none;
 }
 .search-btn:hover{
-  background-color:#fe424d;
-  color:#fff;
+background-color:#d63a45;
+color:#fff;
 }
-
-.search-btn i {
-  display:inline;
-  margin-right:0.5rem;
-}
-
 .search-input{
 border-radius:25px;
-padding : 0.5rem 3rem 0.5rem 3rem;
-font-size: 1.2rem;
+padding: 0.4rem 1rem;
+font-size: 1rem;
+border: 1px solid #ddd;
 }
-
-
+.navbar-brand span {
+font-weight: 700;
+color: #fe424d;
+font-size: 1.3rem;
+}
+@media (max-width: 768px) {
+.search-input { font-size: 0.9rem; }
+.navbar-nav.ms-auto { margin-top: 0.5rem; }
+}
+</style>
 
 </style>
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/listings"><i class="fa-solid fa-compass"></i></a>
+    <a class="navbar-brand" href="/listings">
+    <i class="fa-solid fa-compass"></i>
+    <span>Wanderlust</span>
+    </a>
     <button
     class="navbar-toggler" 
     type="button" 
